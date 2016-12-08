@@ -18,6 +18,7 @@ public class EnquiryPage extends TopNavigationPage
 	}
 
 	
+	
 	public void Goto()
 	{
 		Pages.TopNavigation(driver1).Enquiry();
