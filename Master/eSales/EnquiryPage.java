@@ -17,6 +17,7 @@ public class EnquiryPage extends TopNavigationPage
 		System.out.println("Loginpage constructor starts");
 	}
 
+	
 	public void Goto()
 	{
 		Pages.TopNavigation(driver1).Enquiry();
