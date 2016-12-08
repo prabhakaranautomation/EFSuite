@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="automation" default="Run" basedir=".">
+	<property name="src.dir" value="${basedir}"/>
+ 	<property name="build.dir" value="${basedir}/build"/>
+ 	<property name="testng_output.dir" value="${basedir}/testngReport"/>
+	<property name="testng_Xslt.dir" value="${basedir}/testngXsltReport"/>
+	
+ <!-- get class path, used for build -->
+ <property name="lib.dir" value="${basedir}/src/JARS"/>
+	 <path id="classpath">
+	 	<fileset dir="${lib.dir}" includes="*.jar"/>
+	 	<pathelement location="build"/>
+ 	 </path>
+ 
+ <!-- create build folder, testng_output folder and remove old log file -->
+ <target name="init">
+ 	
+  <delete dir="${build.dir}"/>
+  <delete dir="${testng_output.dir}"/>
+  <delete dir="${testng_Xslt.dir}"/>
+
+  <mkdir dir="${build.dir}"/>
+  <mkdir dir="${testng_output.dir}"/>
+  <mkdir dir="${testng_Xslt.dir}"/>
+
+       
+ </target>
+ 
+ <!-- build all java file to class binary -->
+ <target name="compile" depends="init">
+ 	
+    <javac srcdir="${basedir}" 
+    	destdir="${basedir}/build" 
+    	classpathref="classpath" 
+    	includeantruntime="false" >
+     	<compilerarg value="-Xlint:unchecked"/>
+    </javac> 
+ 	
+ </target>
+ 
+ <!-- Config for testng -->
+ <taskdef name="testng" classname="org.testng.TestNGAntTask">
+    <classpath>
+     	<pathelement location="${basedir}/src/JARS/testng-6.9.9.jar"/>
+    </classpath>
+  </taskdef>
+  
+ 
+ <!-- execute testng after compile, then generate report -->
+ <target name ="Run" depends="compile">
+
+  <!-- config testng -->
+    <testng outputdir="${testng_output.dir}" classpathref="classpath" useDefaultListeners="true">
+
+     <!-- execute testcase follow testng.xml -->
+     <xmlfileset dir="./Suites" includes="15.xml"/>
+     <xmlfileset dir="./Suites" includes="13.xml"/>
+     
+     <!-- generate report title -->
+     <sysproperty key="org.uncommons.reportng.title" value="Test Automation"/>
+     <sysproperty key="org.uncommons.reportng.escape-output" value="false"/>
+    	
+    </testng>
+ 	
+ </target>
+    
+	<path id="test.c">
+		 <fileset dir="${lib.dir}" includes="*.jar">
+			 <include name="mail.jar"/>
+			 <include name="activation-1.0.2.jar"/>
+		 </fileset>
+	 </path>
+	<!--
+	classpathref="test.c"
+	-->
+ <target name="xslt" depends="Run">
+                 
+    <xslt 
+    	in="${basedir}/test-output/testng-results.xml" 
+    	style="${basedir}/testng-results.xsl" 
+    	out="${testng_Xslt.dir}/testng-xslt/index.html" 
+    	processor="SaxonLiaison"
+    	classpathref="test.c"
+    	 > 
+    	
+            <param expression="${testng_Xslt.dir}/testng-xslt/" name="testNgXslt.outputDir" />
+
+            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+
+            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+
+            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+    	
+            <classpath refid="master_classpath">
+            </classpath>
+    	
+        </xslt>
+    </target>
+ 
+<property name="LIB" value="${basedir}/src/JARS " />
+<property name="BIN" value="${basedir}/build" /> <!--  ${basedir}/lib    ${basedir}/bin    ${basedir}/src/JARS -->
+	
+<path id="master_classpath">
+	
+	  <pathelement location="${BIN}" />
+	      <fileset dir="${LIB}">
+	         <include name="**/*.jar" />
+	      </fileset>
+</path>
+ 
+</project>

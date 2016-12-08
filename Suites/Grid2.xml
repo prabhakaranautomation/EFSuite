@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="10"  name="RegressionSuite" parallel="tests">
+	<listeners>
+    	 <listener class-name="testUtills.TestNGListerner2" />
+   	</listeners>
+ <!-- 
+  <test name="RAGU-WINDOWs-IE : 11.0.9600.17843">
+  	<parameter name="Runas" value="GRID"/>
+    <parameter name="browser" value="ie"/>
+    <parameter name="browserVersion" value="11.0.9600.17843"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.51.91:5558/wd/hub"/>
+    <classes>
+			<class name="eSalesTest.QuotationTest" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      			</methods>
+      		</class>
+      		
+     </classes>
+   </test>   
+
+
+  <test name="RAGU-Windows-FF-41.0.2" preserve-order="true">
+  	<parameter name="Runas" value="GRID"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="41.0.2"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="binary" value="C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe"/>
+    <parameter name="Node" value="http://192.168.51.91:5555/wd/hub"/>
+    <classes>
+			<class name="eSalesTest.QuotationTest" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      				
+      				<exclude name="CanCreateBlockedParty" />
+      				<exclude name="CanCreateHiddenParty" />
+      				<exclude name="IsQuotePartySelectedFromPartyMaster" />
+      				 
+      			</methods>
+      		</class>
+     </classes>
+  </test>
+-->  
+   
+  <test name="RAGU- WINDOWS- Chrome : 54.0.2840.99">
+  	<parameter name="Runas" value="GRID"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.51.91:5557/wd/hub"/>
+    <parameter name="browserVersion" value="54.0.2840.99"/>
+    <parameter name="browser" value="chrome"/>
+    
+    <classes>
+			<class name="eSalesTest.QuotationTest" >
+      			<methods>      				
+      				<include name="CanCreateParty" /> 
+      				<include name="CanCreateBlockedParty" />
+      				<exclude name="CanCreateHiddenParty" />
+      				<exclude name="IsQuotePartySelectedFromPartyMaster" />
+      				<exclude name="IsQuoteRestrictedToSaveWithoutParty" />
+      			</methods>
+      		</class>
+     </classes>
+   </test>  
+
+
+  <!-- 
+<test name="Windows-ARUL -FF : 45.0.2" >
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="45.0.2"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="binary" value="C:\\Program Files\\Mozilla\\firefox.exe"/>
+    <parameter name="Node" value="http://192.168.51.96:5565/wd/hub"/>
+    <classes>
+		<class name="eSalesTest.QuotationTest2" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      			</methods>
+      		</class>
+     </classes>
+</test>
+
+<test name="Windows-ARUL-IE : 10.0.9200.16576">
+    <parameter name="browser" value="ie"/>
+    <parameter name="browserVersion" value="10.0.9200.16576"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="binary" value="C:\\Program Files\\Internet Explorer\\iexplore.exe"/>
+    <parameter name="Node" value="http://192.168.51.96:5566/wd/hub"/>
+    <classes>
+		<class name="eSalesTest.QuotationTest2" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      			</methods>
+      		</class>
+      		
+     </classes>
+</test> 
+
+<test name="Windows-ARUL-chrome : 54.0.2840.99">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.51.96:5567/wd/hub"/>
+    <parameter name="browserVersion" value="54.0.2840.99"/>
+    <parameter name="binary" value="C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"/>
+    <parameter name="browser" value="chrome"/>
+    
+    <classes>
+		<class name="eSalesTest.QuotationTest2" >
+      			<methods>      				
+      				<exclude name="CanCreateParty" /> 
+      			</methods>
+      		</class>
+     </classes>
+</test> 
+--> 
+
+<!-- 
+  <test name="KAR-WINDOWs-IE : 11.0.9600.16428">
+    <parameter name="browser" value="ie"/>
+    <parameter name="browserVersion" value="11.0.9600.16428"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.50.84:5576/wd/hub"/>
+    <classes>
+			<class name="eSalesTest.QuotationTest2" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      			</methods>
+      		</class>
+      		
+     </classes>
+   </test>   
+--><!--  preserve-order="true" 
+  <test name="KAR-Windows-FF-45.0.2" >
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="41.0.2"/>
+    <parameter name="binary" value="C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" />
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.50.84:5575/wd/hub"/>
+    <classes>
+			<class name="eSalesTest.QuotationTest2" >
+      			<methods>
+      				<include name="CanCreateParty" /> 
+      				 
+      			</methods>
+      		</class>
+     </classes>
+  </test>  
+ 
+  <test name="KAR- WINDOWS- Chrome : 54.0.2840.99">
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.50.84:5577/wd/hub"/>
+    <parameter name="browserVersion" value="54.0.2840.99"/>
+    <parameter name="browser" value="chrome"/>
+    
+    <classes>
+			<class name="eSalesTest.QuotationTest2" >
+      			<methods>      				
+      				<include name="CanCreateParty" />
+      			</methods>
+      		</class>
+     </classes>
+   </test>  
+ -->
+
+</suite> <!-- testSuite -->

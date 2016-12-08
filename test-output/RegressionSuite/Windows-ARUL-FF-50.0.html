@@ -1,0 +1,381 @@
+<html>
+<head>
+<title>TestNG:  Windows-ARUL-FF-50.0</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Windows-ARUL-FF-50.0</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 23 11:47:09 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>51 seconds (51075 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='eSalesTest.QuotationTest2.init()'><b>init</b><br>Test class: eSalesTest.QuotationTest2<br>Parameters: org.testng.TestRunner@718461fe, firefox, windows, 50.0, http://192.168.51.96:5565/wd/hub</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+l,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://sp/content/common/skin/img/logo-safeprice-48.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast SafePrice&quot;,&quot;description&quot;:&quot;Safe shopping extension&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;installDate&quot;:1472531962539,&quot;updateDate&quot;:1472531962539,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:1877359,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;43.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1479881826452	DeferredSave.extensions.json	DEBUG	Save changes
+1479881826453	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1479881826453	addons.xpi-utils	DEBUG	Updating add-on states
+1479881826456	addons.xpi-utils	DEBUG	Writing add-ons list
+1479881826463	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1479881826464	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 1.0
+1479881826466	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1479881826468	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.5
+1479881826468	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1479881826469	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1479881826470	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1479881826471	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1479881826475	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1479881826475	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1479881826476	addons.manager	DEBUG	Starting provider: GMPProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1479881826492	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1479881826492	addons.manager	DEBUG	Starting provider: PluginProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1479881826493	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1479881826493	addons.manager	DEBUG	Completed startup sequence
+1479881828030	DeferredSave.extensions.json	DEBUG	Starting timer
+1479881828054	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1479881828106	DeferredSave.extensions.json	DEBUG	Starting write
+1479881828291	addons.repository	DEBUG	No addons.json found.
+1479881828292	DeferredSave.addons.json	DEBUG	Save changes
+1479881828298	DeferredSave.addons.json	DEBUG	Starting timer
+1479881828375	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1479881828405	DeferredSave.addons.json	DEBUG	Starting write
+1479881828410	DeferredSave.extensions.json	DEBUG	Write succeeded
+1479881828486	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Command duration or timeout: 48.51 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;HINMAA050077&apos;, ip: &apos;192.168.50.85&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at MasterTest.Testbase$1.initialValue(Testbase.java:225)
+	at MasterTest.Testbase$1.initialValue(Testbase.java:138)
+	at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+	at java.lang.ThreadLocal.get(Unknown Source)
+	at MasterTest.Testbase.getDriver(Testbase.java:127)
+	at MasterTest.Testbase.init(Testbase.java:387)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+l,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://sp/content/common/skin/img/logo-safeprice-48.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast SafePrice&quot;,&quot;description&quot;:&quot;Safe shopping extension&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;installDate&quot;:1472531962539,&quot;updateDate&quot;:1472531962539,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:1877359,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;43.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1479881826452	DeferredSave.extensions.json	DEBUG	Save changes
+1479881826453	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1479881826453	addons.xpi-utils	DEBUG	Updating add-on states
+1479881826456	addons.xpi-utils	DEBUG	Writing add-ons list
+1479881826463	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1479881826464	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 1.0
+1479881826466	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1479881826468	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.5
+1479881826468	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1479881826469	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1479881826470	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1479881826471	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1479881826475	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1479881826475	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1479881826476	addons.manager	DEBUG	Starting provider: GMPProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1479881826492	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1479881826492	addons.manager	DEBUG	Starting provider: PluginProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1479881826493	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1479881826493	addons.manager	DEBUG	Completed startup sequence
+1479881828030	DeferredSave.extensions.json	DEBUG	Starting timer
+1479881828054	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1479881828106	DeferredSave.extensions.json	DEBUG	Starting write
+1479881828291	addons.repository	DEBUG	No addons.json found.
+1479881828292	DeferredSave.addons.json	DEBUG	Save changes
+1479881828298	DeferredSave.addons.json	DEBUG	Starting timer
+1479881828375	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1479881828405	DeferredSave.addons.json	DEBUG	Starting write
+1479881828410	DeferredSave.extensions.json	DEBUG	Write succeeded
+1479881828486	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;HINMAA050077&apos;, ip: &apos;192.168.50.85&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:129)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.callConstructor(FirefoxDriverProvider.java:91)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.newInstance(FirefoxDriverProvider.java:68)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	... 3 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683265633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1683265633'><pre>org.openqa.selenium.WebDriverException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+l,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://sp/content/common/skin/img/logo-safeprice-48.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast SafePrice&quot;,&quot;description&quot;:&quot;Safe shopping extension&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;installDate&quot;:1472531962539,&quot;updateDate&quot;:1472531962539,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:1877359,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;43.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1479881826452	DeferredSave.extensions.json	DEBUG	Save changes
+1479881826453	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1479881826453	addons.xpi-utils	DEBUG	Updating add-on states
+1479881826456	addons.xpi-utils	DEBUG	Writing add-ons list
+1479881826463	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1479881826464	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 1.0
+1479881826466	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1479881826468	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.5
+1479881826468	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1479881826469	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1479881826470	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1479881826471	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1479881826475	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1479881826475	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1479881826476	addons.manager	DEBUG	Starting provider: GMPProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1479881826492	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1479881826492	addons.manager	DEBUG	Starting provider: PluginProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1479881826493	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1479881826493	addons.manager	DEBUG	Completed startup sequence
+1479881828030	DeferredSave.extensions.json	DEBUG	Starting timer
+1479881828054	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1479881828106	DeferredSave.extensions.json	DEBUG	Starting write
+1479881828291	addons.repository	DEBUG	No addons.json found.
+1479881828292	DeferredSave.addons.json	DEBUG	Save changes
+1479881828298	DeferredSave.addons.json	DEBUG	Starting timer
+1479881828375	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1479881828405	DeferredSave.addons.json	DEBUG	Starting write
+1479881828410	DeferredSave.extensions.json	DEBUG	Write succeeded
+1479881828486	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Command duration or timeout: 48.51 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;HINMAA050077&apos;, ip: &apos;192.168.50.85&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at MasterTest.Testbase$1.initialValue(Testbase.java:225)
+	at MasterTest.Testbase$1.initialValue(Testbase.java:138)
+	at java.lang.ThreadLocal.setInitialValue(Unknown Source)
+	at java.lang.ThreadLocal.get(Unknown Source)
+	at MasterTest.Testbase.getDriver(Testbase.java:127)
+	at MasterTest.Testbase.init(Testbase.java:387)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+l,&quot;updateKey&quot;:null,&quot;optionsURL&quot;:null,&quot;optionsType&quot;:null,&quot;aboutURL&quot;:null,&quot;icons&quot;:{},&quot;iconURL&quot;:&quot;chrome://sp/content/common/skin/img/logo-safeprice-48.png&quot;,&quot;icon64URL&quot;:null,&quot;defaultLocale&quot;:{&quot;name&quot;:&quot;Avast SafePrice&quot;,&quot;description&quot;:&quot;Safe shopping extension&quot;,&quot;creator&quot;:&quot;AVAST Software&quot;,&quot;homepageURL&quot;:&quot;http://www.avast.com/&quot;},&quot;visible&quot;:true,&quot;active&quot;:false,&quot;userDisabled&quot;:true,&quot;appDisabled&quot;:false,&quot;descriptor&quot;:&quot;C:\\Program Files\\AVAST Software\\Avast\\SafePrice\\FF&quot;,&quot;installDate&quot;:1472531962539,&quot;updateDate&quot;:1472531962539,&quot;applyBackgroundUpdates&quot;:1,&quot;bootstrap&quot;:true,&quot;skinnable&quot;:false,&quot;size&quot;:1877359,&quot;sourceURI&quot;:null,&quot;releaseNotesURI&quot;:null,&quot;softDisabled&quot;:false,&quot;foreignInstall&quot;:true,&quot;hasBinaryComponents&quot;:false,&quot;strictCompatibility&quot;:false,&quot;locales&quot;:[],&quot;targetApplications&quot;:[{&quot;id&quot;:&quot;{ec8030f7-c20a-464f-9b0e-13a3a9e97384}&quot;,&quot;minVersion&quot;:&quot;38.0a1&quot;,&quot;maxVersion&quot;:&quot;43.0&quot;}],&quot;targetPlatforms&quot;:[],&quot;multiprocessCompatible&quot;:false,&quot;signedState&quot;:2,&quot;seen&quot;:true}
+1479881826452	DeferredSave.extensions.json	DEBUG	Save changes
+1479881826453	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1479881826453	addons.xpi-utils	DEBUG	Updating add-on states
+1479881826456	addons.xpi-utils	DEBUG	Writing add-ons list
+1479881826463	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1479881826464	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 1.0
+1479881826466	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1479881826468	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.5
+1479881826468	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1479881826469	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1479881826470	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1479881826471	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1479881826475	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1479881826475	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1479881826475	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1479881826476	addons.manager	DEBUG	Starting provider: GMPProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1479881826492	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1479881826492	addons.manager	DEBUG	Starting provider: PluginProvider
+1479881826492	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1479881826493	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1479881826493	addons.manager	DEBUG	Completed startup sequence
+1479881828030	DeferredSave.extensions.json	DEBUG	Starting timer
+1479881828054	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1479881828054	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1479881828106	DeferredSave.extensions.json	DEBUG	Starting write
+1479881828291	addons.repository	DEBUG	No addons.json found.
+1479881828292	DeferredSave.addons.json	DEBUG	Save changes
+1479881828298	DeferredSave.addons.json	DEBUG	Starting timer
+1479881828375	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1479881828376	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1479881828405	DeferredSave.addons.json	DEBUG	Starting write
+1479881828410	DeferredSave.extensions.json	DEBUG	Write succeeded
+1479881828486	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;HINMAA050077&apos;, ip: &apos;192.168.50.85&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:129)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.callConstructor(FirefoxDriverProvider.java:91)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.newInstance(FirefoxDriverProvider.java:68)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	... 3 more
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='eSalesTest.QuotationTest2.beforemethod()'><b>beforemethod</b><br>Test class: eSalesTest.QuotationTest2</td>
+<td></td>
+<td>0</td>
+<td>eSalesTest.QuotationTest2@48140564</td></tr>
+<tr>
+<td title='eSalesTest.QuotationTest2.aftermethod()'><b>aftermethod</b><br>Test class: eSalesTest.QuotationTest2</td>
+<td></td>
+<td>0</td>
+<td>eSalesTest.QuotationTest2@48140564</td></tr>
+<tr>
+<td title='eSalesTest.QuotationTest2.AfterTestclose()'><b>AfterTestclose</b><br>Test class: eSalesTest.QuotationTest2</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='eSalesTest.QuotationTest2.CanCreateParty()'><b>CanCreateParty</b><br>Test class: eSalesTest.QuotationTest2</td>
+<td></td>
+<td>0</td>
+<td>eSalesTest.QuotationTest2@48140564</td></tr>
+</table><p>
+</body>
+</html>

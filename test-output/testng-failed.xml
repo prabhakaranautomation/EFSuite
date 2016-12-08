@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]" parallel="tests">
+  <parameter name="Runas" value="GRID"/>
+  <parameter name="Node" value="http://192.168.51.91:5557/wd/hub"/>
+  <parameter name="browserVersion" value="54.0.2840.99"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="platform" value="windows"/>
+  <listeners>
+    <listener class-name="testUtills.TestNGListerner2"/>
+  </listeners>
+  <test name="RAGU- WINDOWS- Chrome : 54.0.2840.99(failed)" parallel="tests">
+    <parameter name="Runas" value="GRID"/>
+    <parameter name="Node" value="http://192.168.51.91:5557/wd/hub"/>
+    <parameter name="browserVersion" value="54.0.2840.99"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="windows"/>
+    <classes>
+      <class name="eSalesTest.QuotationTest">
+        <methods>
+          <include name="init"/>
+          <include name="Aftersuite"/>
+          <include name="bsuite"/>
+          <include name="AfterTestclose"/>
+          <include name="CanCreateBlockedParty"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="CanCreateParty"/>
+        </methods>
+      </class> <!-- eSalesTest.QuotationTest -->
+    </classes>
+  </test> <!-- RAGU- WINDOWS- Chrome : 54.0.2840.99(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

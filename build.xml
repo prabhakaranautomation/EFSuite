@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="novopayBoi" default="clean" basedir=".">
+ 
+ <!-- cleaning the destination folders -->
+ <target name="clean">
+ <echo message="deleting existing build directory"/>
+ <delete dir="${test.dest}"/>
+ </target>
+ 
+ 
+ 
+ <target name="javaproject">
+ <!-- include any number of child build.xml as you wish-->
+ <!-- <ant antfile="masterBuildFiles/buildXYZ_Template.xml" target="run" /> -->
+ 	
+ <ant antfile="${basedir}/buildsuite/buildall.xml" target="runAsTestngXslt" /> <!-- run -->
+ <!-- <ant antfile="masterBuildFiles/build2_WebRegression.xml" target="run" /> -->
+ </target>
+	
+ <target name="localjob">
+ <!-- include any number of child build.xml as you wish-->
+ <!-- <ant antfile="masterBuildFiles/buildXYZ_Template.xml" target="run" /> -->
+ 	
+ <ant antfile="buildall.xml" target="runAsTestngXslt" /> <!-- run -->
+ <!-- <ant antfile="masterBuildFiles/build2_WebRegression.xml" target="run" /> -->
+ </target>
+</project>

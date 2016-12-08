@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionSuite">
+	<test name="MasterTest">
+		<classes>
+      		<class name="MasterTest.LoginTest" >
+      			<methods>
+      				<include name="logininvalid" />
+      				<include name="loginvalid" />
+      			</methods>
+      		</class>
+      		<class name="MasterTest.CarrierMasterTest" >
+      			<methods>
+      				<include name="CarrierMasterAirNewTest" />
+      			</methods>
+      		</class>
+   		</classes>
+	</test>
+	<test name="CarrierTest">
+		<classes>
+			<class name="MasterTest.CarrierMasterTest" >
+      			<methods>
+      				<include name="CarrierMasterAirNewTest" />
+      			</methods>
+      		</class>
+      	</classes>
+     </test>
+     
+</suite>

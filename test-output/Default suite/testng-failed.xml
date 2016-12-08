@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="eSalesTest.QuotationTest">
+        <methods>
+          <include name="CanNavigateToPartyMasterFromQuoteParty"/>
+          <include name="CanCreateBlockedParty"/>
+          <include name="QuotePartyAddress1CanAllowonly100AlphanumericAndSpecialCharacters"/>
+          <include name="QuotePartyAddress3CanAllowonly100AlphanumericAndSpecialCharacters"/>
+          <include name="CanCreateParty"/>
+          <include name="CanQuoteAllowtoSaveWithOutAttention"/>
+          <include name="QuoteAttentionCanAllowSameNameAgainAndAgain"/>
+          <include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress2"/>
+          <include name="CanQuoteAllowtoSaveWithOutPartyAddress3Address"/>
+          <include name="IsQuotePartyLOVHavingAddNewOption"/>
+          <include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress1"/>
+          <include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress3"/>
+          <include name="CanChangeQuotePartyAddress"/>
+          <include name="bsuite"/>
+          <include name="IsQuoteRestrictedToEnterHiddenParty"/>
+          <include name="QuotePartyAddress2CanAllowonly100AlphanumericAndSpecialCharacters"/>
+          <include name="IsNavigatedAndCreatedPartyCanComeToQuote"/>
+          <include name="IsQuoteRestrictedToSaveWithoutPartyAddress1Address"/>
+          <include name="IsHiddenPartyDisplayedInQuotePartyLOV"/>
+          <include name="IsPartyAddressWillComeWhenSelectPartyName"/>
+          <include name="IsQuoteRestrictedToSaveWithoutPartyAddress2Address"/>
+          <include name="init"/>
+          <include name="QuoteAttentionCanAllowLessThan100AlphaCharacters"/>
+          <include name="CanAllowAlphanumericCharactersByQuotePartyAttention"/>
+          <include name="IsQuoteRestrictedToSelectInvalidParty"/>
+          <include name="CanCreateMultiAddressParty"/>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="CanPrimaryAddressComeByDefaultInQuoteParty"/>
+          <include name="QuoteAttentionCanAllowonly100AlphaCharacters"/>
+          <include name="IsQuotePartySelectedFromPartyMaster"/>
+          <include name="AfterTestclose"/>
+          <include name="CanQuoteAttentionComeFromPartyMasterAddressContactName"/>
+          <include name="IsQuoteRestrictedToSaveWithoutParty"/>
+          <include name="CanCreateHiddenParty"/>
+          <include name="IsQuoteRestrictedToEnterBlockedParty"/>
+        </methods>
+      </class> <!-- eSalesTest.QuotationTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

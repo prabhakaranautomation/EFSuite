@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionSuite">
+	<listeners>
+        <listener class-name="testUtills.TestNGListerner2" />
+    </listeners>
+    
+	<test name="MasterTest">
+		<classes>
+      		<class name="MasterTest.LoginTest" >
+      			<methods>
+      				<include name="logininvalid" />
+      				<include name="loginvalid" />
+      			</methods>
+      		</class>
+      		<class name="MasterTest.CarrierMasterTest" >
+      			<methods>
+      				<include name="CarrierMasterAirNewTest" />
+      			</methods>
+      		</class>
+   		</classes>
+	</test>
+	<test name="QuotationTest">
+		<classes>
+			<class name="eSalesTest.QuotationTest" >
+      			<methods>
+      				<include name="CanCreateParty" />
+      				<include name="IsQuotePartySelectedFromMaster" />
+      			</methods>
+      		</class>
+      	</classes>
+     </test>
+     
+</suite>

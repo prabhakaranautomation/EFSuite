@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite  thread-count="6" name="RegressionSuite" parallel="tests">
+	<listeners>
+        <listener class-name="testUtills.TestNGListerner2" />
+    </listeners>
+	<test name="MasterTest" preserve-order="true">
+	<parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="45.0.2"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="Node" value="http://192.168.50.87:5554/wd/hub"/>
+		<classes>
+      		<class name="MasterTest.LoginTest" >
+      			<methods>
+      				<include name="logininvalid" />
+      				<include name="loginvalid" />
+      			</methods>
+      		</class>
+      		<class name="MasterTest.CarrierMasterTest" >
+      			<methods>
+      				<include name="CarrierMasterAirNewTest" />
+      			</methods>
+      		</class>
+   		</classes>
+	</test>
+     
+</suite>

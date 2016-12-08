@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionSuite">
+	<listeners>
+        <listener class-name="testUtills.TestNGListerner2" />
+    </listeners>
+    
+	<test name="QuotationTest">
+		<classes>
+			<class name="eSalesTest.QuotationTest" >
+      			<methods>
+      				
+      				<include name="CanCreateParty" /> 
+      				<include name="CanCreateBlockedParty" />
+      				<include name="CanCreateHiddenParty" />
+      				<include name="CanCreateMultiAddressParty" />
+      				
+      				<include name="IsQuotePartySelectedFromPartyMaster" />
+      				<include name="IsQuoteRestrictedToSaveWithoutParty" />
+      				
+      				<include name="IsQuoteRestrictedToSelectInvalidParty" />
+      				<include name="IsQuoteRestrictedToEnterBlockedParty" />
+      				<include name="IsHiddenPartyDisplayedInQuotePartyLOV" />
+      				<include name="IsQuoteRestrictedToEnterHiddenParty" />
+      				
+      				<include name="IsQuotePartyLOVHavingAddNewOption" />
+      				<include name="CanNavigateToPartyMasterFromQuoteParty" />
+      				<include name="IsNavigatedAndCreatedPartyCanComeToQuote" />
+      				
+      				<include name="IsPartyAddressWillComeWhenSelectPartyName" />
+      				<include name="CanPrimaryAddressComeByDefaultInQuoteParty" />
+      				<include name="CanChangeQuotePartyAddress" />
+      				
+      				<include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress1" />
+      				<include name="QuotePartyAddress1CanAllowonly100AlphanumericAndSpecialCharacters" />
+      				<include name="IsQuoteRestrictedToSaveWithoutPartyAddress1Address" />
+      				
+      				<include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress2" />
+      				<include name="QuotePartyAddress2CanAllowonly100AlphanumericAndSpecialCharacters" />
+      				<include name="IsQuoteRestrictedToSaveWithoutPartyAddress2Address" />
+      				
+      				<include name="CanAllowAlphanumericAndSpecialCharactersByQuotePartyAddress3" />
+      				<include name="QuotePartyAddress3CanAllowonly100AlphanumericAndSpecialCharacters" />
+      				<include name="IsQuoteRestrictedToSaveWithoutPartyAddress2Address" />
+      				
+      				<include name="CanQuoteAttentionComeFromPartyMasterAddressContactName" />
+      				<include name="CanQuoteAllowtoSaveWithOutAttention" />
+      				<include name="CanAllowAlphanumericCharactersByQuotePartyAttention" />
+      				<include name="QuoteAttentionCanAllowLessThan100AlphaCharacters" />
+      				<include name="QuoteAttentionCanAllowonly100AlphaCharacters" />
+      				<include name="QuoteAttentionCanAllowSameNameAgainAndAgain" />
+      				
+      			</methods>
+      		</class>
+      	</classes>
+     </test>
+     
+     
+     
+</suite>
