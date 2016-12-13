@@ -13,7 +13,7 @@
  <!-- include any number of child build.xml as you wish-->
  <!-- <ant antfile="masterBuildFiles/buildXYZ_Template.xml" target="run" /> -->
  	
- <ant antfile="${basedir}/buildsuite/buildall.xml" target="runAsTestngXslt" /> <!-- run -->
+ <ant antfile="${basedir}/buildsuite/buildall.xml" target="run" /> <!-- run -->
  <!-- <ant antfile="masterBuildFiles/build2_WebRegression.xml" target="run" /> -->
  </target>
 	
