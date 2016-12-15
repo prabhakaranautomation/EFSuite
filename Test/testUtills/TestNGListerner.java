@@ -154,8 +154,7 @@
 //            	
 //            	System.out.println("TOP ***** " + result.getMethod().getMethodName());
 //                test = extent.startTest(result.getMethod().getMethodName());
-//  
-//                //test = extent.startTest(“[” + result.getMethod().getMethodName() + “], [” + result.getMethod().getDescription() + “]”);
+//                test = extent.startTest(â€œ[â€ + result.getMethod().getMethodName() + â€œ], [â€ + result.getMethod().getDescription() + â€œ]â€);
 //                
 //                test.getTest().setStartedTime(getTime(result.getStartMillis()));
 //                
@@ -221,7 +220,7 @@
 //            	if(ITestResult.SUCCESS==result.getStatus())
 //        		{
 //            		test.log(status, message );
-//        			System.out.println("Report updated for –> PASS");
+//        			  System.out.println("Report updated for  PASS");
 //        		}
 //        		else if(ITestResult.FAILURE==result.getStatus())
 //        		{
@@ -246,13 +245,13 @@
 //                    	}
 //                    }
 //        			//test.log(LogStatus.FAIL, "MyStep name",imagecaptured );
-//        			System.out.println("Report updated for –> FAIL");
+//        			System.out.println("Report updated for  FAIL");
 //        		}
 //        		else if(ITestResult.SKIP==result.getStatus())
 //        		{
 //        			test.log(status, message );
 //        			//test.log(LogStatus.SKIP, "MyStep name",imagecaptured );
-//        			System.out.println("Report updated for –> SKIPPED");
+//        			System.out.println("Report updated for  SKIPPED");
 //        		}
 //                
 //            	
