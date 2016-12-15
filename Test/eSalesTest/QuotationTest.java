@@ -225,7 +225,7 @@ public class QuotationTest extends Testbase
 	}
 
 	
-	// EFS_QT_AIR_011 // Select/Choose blocked Party Code column, “This Party code blocked in the master” message has come.
+	// EFS_QT_AIR_011 // Select/Choose blocked Party Code column, This Party code blocked in the master message has come.
 	@Test(priority = 6, dependsOnMethods = { "CanCreateBlockedParty" }, groups = { "Smoke" ,"Unit"})
 	public void IsQuoteRestrictedToEnterBlockedParty()// EFS_QT_AIR_011
 	{
@@ -271,7 +271,7 @@ public class QuotationTest extends Testbase
 	}
 	
 	
-	// EFS_QT_AIR_013 //System should not allow the hidden Party Code column. While enter hidden Party code, following user message should show, “This Party Code hidden in the master”.
+	// EFS_QT_AIR_013 //System should not allow the hidden Party Code column. While enter hidden Party code, following user message should show, This Party Code hidden in the master.
 	@Test(priority = 8, dependsOnMethods = { "CanCreateHiddenParty" }, groups = { "Smoke"  ,"Unit"})
 	public void IsQuoteRestrictedToEnterHiddenParty()// EFS_QT_AIR_013
 	{
